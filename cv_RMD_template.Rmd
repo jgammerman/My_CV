@@ -1,0 +1,167 @@
+---
+title: "James Gammerman's CV"
+author: James Gammerman
+date: "`r Sys.Date()`"
+params:
+  pdf_mode:
+    value: true
+output:
+  pagedown::html_resume:
+    css: ['dd_cv.css', 'resume']
+    self_contained: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE,
+  warning=FALSE,
+  message=FALSE
+)
+
+library(magrittr) # For the pipe
+source("CV_printing_functions.R")
+
+# Read in all data and initialize a CV printer object
+CV <- create_CV_object(
+  data_location = "/Users/yasha/Desktop/Data_Science/My_CV/CSVs/",  
+  pdf_mode = params$pdf_mode
+)
+
+```
+
+
+```{r}
+# When in pdf export mode the little dots are unaligned, so fix that with some conditional CSS.
+if(params$pdf_mode) {
+    cat("
+<style>
+:root{
+  --decorator-outer-offset-left: -6.5px;
+}
+</style>")
+}
+```
+
+
+Aside
+================================================================================
+
+![](mugshot_shirt.jpg){width=100%}
+
+```{r}
+# Build interactive network of positions colored by section
+# and connected if they occurred in the same year
+#datadrivencv::build_network_logo(CV$entries_data)
+```
+
+
+```{r}
+if(params$pdf_mode){
+  cat("View this CV online with links at jamesgammerman.com/cv")
+} else {
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://www.jamesgammerman.com/cv)")
+}
+```
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_contact_info()
+```
+
+
+
+Language Skills {#skills}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_skill_bars()
+```
+
+
+
+<!-- Disclaimer {#disclaimer} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- Made with the R package [**pagedown**](https://github.com/rstudio/pagedown).  -->
+
+<!-- The source code is available [on github.com/nstrayer/cv](https://github.com/nstrayer/datadrivencv). -->
+
+<!-- Last updated on `r Sys.Date()`. -->
+
+
+
+Main
+================================================================================
+
+James Gammerman {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+# Note the special double pipe so we modify the CV object in place
+CV %<>% print_text_block("intro") 
+```
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('education')
+```
+
+
+
+Professional Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+
+
+```{r}
+CV %<>% print_section('industry_positions')
+```
+
+<!-- <!-- These breaks just force a new page so section doesnt get cut off --> 
+<!-- <br> -->
+<!-- <br> -->
+<!-- <br> -->
+
+
+Academic Publications, Talks & Teaching {data-icon=book}
+--------------------------------------------------------------------------------
+
+
+::: aside
+```{r}
+CV %<>% print_text_block('academic_articles_aside')
+```
+:::
+
+```{r}
+CV %<>% print_section('academic_articles')
+```
+
+
+Data Science Writing {data-icon=chart-line}
+--------------------------------------------------------------------------------
+
+::: aside
+```{r}
+CV %<>% print_text_block('data_science_writing_aside')
+```
+:::
+
+```{r}
+CV %<>% print_section('data_science_writings')
+```
+
+<!-- <br> -->
+<!-- <br> -->
+<!-- <br> -->
+
+```{r}
+CV %<>% print_links()
+```

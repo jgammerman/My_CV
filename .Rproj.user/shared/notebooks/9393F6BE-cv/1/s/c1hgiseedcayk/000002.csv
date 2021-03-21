@@ -1,0 +1,17 @@
+"0","knitr::opts_chunk$set("
+"0","  results='asis', "
+"0","  echo = FALSE"
+"0",")"
+"0",""
+"0","library(magrittr) # For the pipe"
+"0","source(""CV_printing_functions.R"")"
+"0",""
+"0","# Read in all data and initialize a CV printer object"
+"0","CV <- create_CV_object("
+"0","  data_location = ""https://docs.google.com/spreadsheets/d/1ziUIWzHXqyCjFZJtFzj8PUo1uPIct9Q37mLGqeuVn1I/edit#gid=1730172225"",  "
+"0","  pdf_mode = params$pdf_mode"
+"0",")"
+"2","Error: Client error: (403) PERMISSION_DENIED
+  * Client does not have sufficient permission. This can happen because the OAuth token does not have the right scopes, the client doesn't have permission, or the API has not been enabled for the client project.
+  * The caller does not have permission
+"

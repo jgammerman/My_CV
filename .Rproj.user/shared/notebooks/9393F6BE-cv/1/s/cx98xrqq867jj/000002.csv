@@ -1,0 +1,57 @@
+"0","CV %>% print_skill_bars()"
+"1","<div
+  class = 'skill-bar'
+  style = ""background:linear-gradient(to right,
+                                      #969696 100%,
+                                      #d9d9d9 100% 100%)""
+>R</div>"
+"1","
+"
+"1","<div
+  class = 'skill-bar'
+  style = ""background:linear-gradient(to right,
+                                      #969696 70%,
+                                      #d9d9d9 70% 100%)""
+>Python</div>"
+"1","
+"
+"1","<div
+  class = 'skill-bar'
+  style = ""background:linear-gradient(to right,
+                                      #969696 60%,
+                                      #d9d9d9 60% 100%)""
+>Bash</div>"
+"1","
+"
+"1","<div
+  class = 'skill-bar'
+  style = ""background:linear-gradient(to right,
+                                      #969696 60%,
+                                      #d9d9d9 60% 100%)""
+>SQL</div>"
+"1","
+"
+"1","<div
+  class = 'skill-bar'
+  style = ""background:linear-gradient(to right,
+                                      #969696 60%,
+                                      #d9d9d9 60% 100%)""
+>MATLAB</div>"
+"1","
+"
+"1","<div
+  class = 'skill-bar'
+  style = ""background:linear-gradient(to right,
+                                      #969696 40%,
+                                      #d9d9d9 40% 100%)""
+>Fortran</div>"
+"1","
+"
+"1","<div
+  class = 'skill-bar'
+  style = ""background:linear-gradient(to right,
+                                      #969696 40%,
+                                      #d9d9d9 40% 100%)""
+>Javascript</div>"
+"1","
+"

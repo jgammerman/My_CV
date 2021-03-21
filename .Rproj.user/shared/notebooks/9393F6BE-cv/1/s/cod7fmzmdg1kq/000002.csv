@@ -1,0 +1,47 @@
+"0","knitr::opts_chunk$set("
+"0","  results='asis', "
+"0","  echo = FALSE"
+"0",")"
+"0",""
+"0","library(magrittr) # For the pipe"
+"0","source(""CV_printing_functions.R"")"
+"0",""
+"0","# Read in all data and initialize a CV printer object"
+"0","CV <- create_CV_object("
+"0","  data_location = ""/Users/yasha/Desktop/Data_Science/My_CV/CSVs/"",  "
+"0","  pdf_mode = params$pdf_mode"
+"0",")"
+"2","Parsed with column specification:
+cols(
+  section = [31mcol_character()[39m,
+  title = [31mcol_character()[39m,
+  loc = [31mcol_character()[39m,
+  institution = [31mcol_character()[39m,
+  start = [32mcol_double()[39m,
+  end = [31mcol_character()[39m,
+  description_1 = [31mcol_character()[39m,
+  description_2 = [31mcol_character()[39m,
+  description_3 = [31mcol_character()[39m,
+  description_4 = [33mcol_logical()[39m,
+  in_resume = [33mcol_logical()[39m
+)
+"
+"2","Parsed with column specification:
+cols(
+  skill = [31mcol_character()[39m,
+  level = [32mcol_double()[39m
+)
+"
+"2","Parsed with column specification:
+cols(
+  loc = [31mcol_character()[39m,
+  text = [31mcol_character()[39m
+)
+"
+"2","Parsed with column specification:
+cols(
+  loc = [31mcol_character()[39m,
+  icon = [31mcol_character()[39m,
+  contact = [31mcol_character()[39m
+)
+"

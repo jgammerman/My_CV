@@ -1,0 +1,6 @@
+"0","# Build interactive network of positions colored by section"
+"0","# and connected if they occurred in the same year"
+"0","datadrivencv::build_network_logo(CV$entries_data)"
+"2","NAs introduced by coercion"
+"2","Error in start:end : NA/NaN argument
+"

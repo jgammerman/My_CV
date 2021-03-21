@@ -1,0 +1,15 @@
+"0","# When in pdf export mode the little dots are unaligned, so fix that with some conditional CSS."
+"0","if(params$pdf_mode) {"
+"0","    cat("""
+"0","<style>"
+"0",":root{"
+"0","  --decorator-outer-offset-left: -6.5px;"
+"0","}"
+"0","</style>"")"
+"0","}"
+"1","
+<style>
+:root{
+  --decorator-outer-offset-left: -6.5px;
+}
+</style>"

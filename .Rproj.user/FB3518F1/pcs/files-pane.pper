@@ -1,0 +1,13 @@
+{
+    "path" : "~/Desktop/Data_Science/My_CV",
+    "sortOrder" : [
+        {
+            "ascending" : false,
+            "columnIndex" : 4
+        },
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
