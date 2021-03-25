@@ -1,0 +1,13 @@
+Id used for finding text block,Contents of text block. Supports markdown formatting.
+loc,text
+intro,"I'm a data scientist with a Master's degree in Machine Learning. I have 4 years of experience in data science and 8 years in data analysis more generally.
+
+Within data science my main interest is in the application of machine learning techniques to business data, both classical and modern. I have also published research on ML in academic journals.
+
+Outside of my career my main interests are sports, music, current affairs and technology.
+"
+academic_articles_aside,"I have recently started publishing research in academic journals in collaboration with my alma mater Royal Holloway University.
+
+My main area of interest relates to conformal prediction, a framework for dealing with uncertainty in supervised machine learning."
+data_science_writing_aside,I have recently started a personal website where I upload some of my data science work
+talks_and_teaching_aside,"I have given public talks on machine learning, and periodically teach workshops to my colleagues on the subject of programming and business analytics"

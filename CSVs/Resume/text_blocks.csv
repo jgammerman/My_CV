@@ -1,0 +1,9 @@
+Id used for finding text block,Contents of text block. Supports markdown formatting.
+loc,text
+intro,"
+I'm a data scientist with a Master's degree in Machine Learning and 3 years' 
+professional experience.
+
+Within data science my main interest is in the application of classical and modern machine learning techniques to business data. I am particularly interested in the field of natural language processing. I have also published research in the field of uncertainty estimation in machine learning.
+
+Outside of my career my main hobbies are sports, music and learning languages."

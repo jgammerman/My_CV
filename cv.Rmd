@@ -7,7 +7,7 @@ params:
     value: true
 output:
   pagedown::html_resume:
-    css: ['dd_cv.css', 'resume']
+    css: ['css/custom_cv.css', 'css/dd_cv.css', 'resume']
     self_contained: true
 ---
 
@@ -22,7 +22,7 @@ source("CV_printing_functions.R")
 
 # Read in all data and initialize a CV printer object
 CV <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/1mSzzEC2-PNN1t3cf_umHiZJZdAnFLsKGPv6eOd3cawo/edit#gid=917338460",  
+  data_location = "/Users/yasha/Desktop/Data_Science/My_CV/CSVs/CV/",  
   pdf_mode = params$pdf_mode
 )
 
@@ -40,7 +40,6 @@ if(params$pdf_mode) {
 </style>")
 }
 ```
-
 
 
 Aside
@@ -81,15 +80,15 @@ CV %>% print_skill_bars()
 
 
 
-<!-- Disclaimer {#disclaimer} -->
-<!-- -------------------------------------------------------------------------------- -->
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
 
-<!-- Made with the R package [**pagedown**](https://github.com/rstudio/pagedown).  -->
+Made with the R package [**datadrivencv**](https://nickstrayer.me/datadrivencv/).
 
-<!-- The source code is available [on github.com/nstrayer/cv](https://github.com/nstrayer/datadrivencv). -->
+Last updated on `r Sys.Date()`.
 
-<!-- Last updated on `r Sys.Date()`. -->
-
+<br>
+<br>
 
 
 Main
@@ -123,13 +122,9 @@ Professional Experience {data-icon=suitcase}
 CV %<>% print_section('industry_positions')
 ```
 
-<!-- <!-- These breaks just force a new page so section doesnt get cut off --> 
-<!-- <br> -->
-<!-- <br> -->
-<!-- <br> -->
+<br>
 
-
-Academic Publications, Talks & Teaching {data-icon=book}
+Academic Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
 
@@ -141,6 +136,20 @@ CV %<>% print_text_block('academic_articles_aside')
 
 ```{r}
 CV %<>% print_section('academic_articles')
+```
+
+
+Talks & Teaching{data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+::: aside
+```{r}
+CV %<>% print_text_block('talks_and_teaching_aside')
+```
+:::
+
+```{r}
+CV %<>% print_section('talks_and_teaching')
 ```
 
 
@@ -157,9 +166,6 @@ CV %<>% print_text_block('data_science_writing_aside')
 CV %<>% print_section('data_science_writings')
 ```
 
-<!-- <br> -->
-<!-- <br> -->
-<!-- <br> -->
 
 ```{r}
 CV %<>% print_links()
