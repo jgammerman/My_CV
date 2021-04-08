@@ -1,17 +1,17 @@
 {
-    "path" : "~/Desktop/Data_Science/My_CV",
+    "path" : "~/Desktop/Data_Science/My_CV/folder_with_key_files",
     "sortOrder" : [
         {
             "ascending" : false,
             "columnIndex" : 4
         },
         {
-            "ascending" : false,
-            "columnIndex" : 3
-        },
-        {
             "ascending" : true,
             "columnIndex" : 2
+        },
+        {
+            "ascending" : false,
+            "columnIndex" : 3
         }
     ]
 }

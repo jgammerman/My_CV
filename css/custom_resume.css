@@ -1,7 +1,8 @@
 
 * {
   /* Override default right margin for sidebar*/
-  --pagedjs-margin-right: 0.2in !important;
+  /* --pagedjs-margin-right: 0.2in !important;*/
+  --pagedjs-margin-right: 0.33in !important;
   --pagedjs-margin-left: 0;
   --pagedjs-margin-top: 0.2in;
   --pagedjs-margin-bottom: 0.2in;
@@ -20,9 +21,10 @@
   margin-left: -0.1in;
 }
 
+/* JG: Use sidebar-width parameter below to change width of sidebar */
 /* Customize some of the sizing variables */
 :root {
-  --sidebar-width: 12rem !important; /* Shrink sidebar width  */
+  --sidebar-width: 12.5rem !important; /* Shrink sidebar width  */
   --sidebar-horizontal-padding: 0.02in; /* Reduce sidebar padding */
 }
 
@@ -39,7 +41,8 @@
 }
 
 .aside .level2 {
-  margin-top: 0.315in;
+  /* margin-top: 0.315in; */
+  margin-top: 1in;
 }
 
 .aside p {

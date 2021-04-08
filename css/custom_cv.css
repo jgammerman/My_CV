@@ -25,6 +25,7 @@
   margin-left: -0.1in;
 }
 
+/* JG: Use sidebar-width parameter below to change width of sidebar */
 /* Customize some of the sizing variables */
 :root {
   --sidebar-width: 12rem !important; /* Shrink sidebar width  */
